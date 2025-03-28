@@ -106,16 +106,6 @@
   transition-timing-function: var(--tw-ease, ease);
   transition-duration: var(--tw-duration, 0s);
 }
-.hover\:scale-105 {
-  &:hover {
-    @media (hover: hover) {
-      --tw-scale-x: 105%;
-      --tw-scale-y: 105%;
-      --tw-scale-z: 105%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-}
 .hover\:scale-\[1\.2\] {
   &:hover {
     @media (hover: hover) {
@@ -163,7 +153,7 @@ button:not(.cross) {
   max-width: 100%;
   height: auto;
 }
-*/ .relative {
+.relative {
   position: relative;
 }
 .bg-gradient-to-t {
