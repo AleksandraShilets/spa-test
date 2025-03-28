@@ -38,9 +38,14 @@ const useStore = create<StoreState>((set) => ({
         set({ products: [] });
       }
     } catch (error) {
-      console.error('Ошибка при загрузке данных:', error.message);
+      if (error instanceof Error) {
+        console.error('Ошибка при загрузке данных:', error.message);
+      } else {
+        console.error('Неизвестная ошибка:', error);
+      }
       set({ products: [] });
     }
+    
   },
 
   addProduct: async (product) => {

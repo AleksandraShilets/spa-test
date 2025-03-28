@@ -4,6 +4,7 @@ import useStore from '@/store';
 import { AiOutlineHeart, AiFillHeart, AiOutlineClose } from 'react-icons/ai';
 
 
+
 const ProductsPage = () => {
   const router = useRouter();
   const { products, fetchProducts, toggleLike, removeProduct } = useStore();
