@@ -6,8 +6,8 @@ export interface Product {
   description: string;
   price: number;
   image: string;
-  liked?: boolean; // Поле для лайков
-  detailedDescription: string; // Поле для подробного описания
+  liked?: boolean; 
+  detailedDescription?: string; 
 }
 
 interface StoreState {
@@ -15,7 +15,7 @@ interface StoreState {
   fetchProducts: () => Promise<void>;
   addProduct: (product: Product) => Promise<void>;
   toggleLike: (id: number) => void;
-  removeProduct: (id: number) => void; // Новая функция удаления
+  removeProduct: (id: number) => void; 
 }
 
 const useStore = create<StoreState>((set) => ({
