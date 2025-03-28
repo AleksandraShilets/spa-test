@@ -63,9 +63,14 @@ const useStore = create<StoreState>((set) => ({
 
       const newProduct = await response.json();
       set((state) => ({ products: [...state.products, newProduct] }));
-    } catch (error) {
-      console.error('Ошибка при добавлении продукта:', error.message);
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+        console.error('Ошибка при добавлении продукта:', error.message);
+      } else {
+        console.error('Неизвестная ошибка:', error);
+      }
     }
+    
   },
 
   toggleLike: (id) =>

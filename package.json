@@ -11,7 +11,7 @@
     "watch:css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "dependencies": {
-    "framer-motion": "^12.5.0",
+    "framer-motion": "^12.6.2",
     "next": "^15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -20,9 +20,9 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/cli": "^4.0.15",
-    "@tailwindcss/postcss": "^4.0.16",
-    "@types/node": "^20.17.27",
+    "@tailwindcss/cli": "^4.0.17",
+    "@tailwindcss/postcss": "^4.0.17",
+    "@types/node": "^22.13.14",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",
