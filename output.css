@@ -521,6 +521,7 @@
   syntax: "*";
   inherits: false;
 }
+}
 .product-page {
   display: flex;
   justify-content: center;
@@ -559,6 +560,7 @@
 .product-price {
   font-size: 18px;
 }
+
 .back-button {
   margin-top: 20px;
   padding: 10px;
