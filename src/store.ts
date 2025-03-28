@@ -37,14 +37,14 @@ const useStore = create<StoreState>((set) => ({
         console.error('API вернул некорректные данные:', data);
         set({ products: [] });
       }
-    } catch (error) {
+    } catch (error: unknown) {
       if (error instanceof Error) {
-        console.error('Ошибка при загрузке данных:', error.message);
+        console.error('Ошибка при добавлении продукта:', error.message);
       } else {
         console.error('Неизвестная ошибка:', error);
       }
-      set({ products: [] });
     }
+    
     
   },
 
