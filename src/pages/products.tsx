@@ -30,10 +30,7 @@ const ProductsPage = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen p-6">
-  {/* Заголовок */}
   <h1 className="text-3xl font-bold text-center mb-8">Services</h1>
-
-  {/* Контейнер для кнопок */}
   <div className="flex justify-between items-center mb-8">
     <button
       onClick={() => router.push('/products/create-product')}
@@ -48,7 +45,6 @@ const ProductsPage = () => {
       Go to main
     </button>
   </div>
-      {/* Фильтрация */}
       <div className="flex justify-center w-[200px] mx-auto mb-8 p-4 gap-4 flex-container">
         <button
           onClick={() => setFilter('all')}
@@ -67,8 +63,6 @@ const ProductsPage = () => {
           Favourites
         </button>
       </div>
-
-      {/* Сетка продуктов */}
       <div className="grid-container">
         {filteredProducts.map((product) => (
           <div
@@ -76,7 +70,6 @@ const ProductsPage = () => {
           className="card relative bg-white rounded-lg shadow-md overflow-hidden w-full max-w-[400px]"
           onClick={() => handleCardClick(product.id)}
         >
-           {/* Кнопка удаления */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -88,7 +81,6 @@ const ProductsPage = () => {
             </button>
 
 
-            {/* Изображение */}
             <img
               src={product.image || 'https://via.placeholder.com/150'}
               alt={product.title}
@@ -101,7 +93,6 @@ const ProductsPage = () => {
               }}
             />
 
-            {/* Кнопка лайка */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
@@ -117,8 +108,6 @@ const ProductsPage = () => {
                 <AiOutlineHeart size={24} />
               )}
             </button>
-
-            {/* Контент */}
             <div className="p-4">
               <h3 className="text-lg font-semibold text-gray-800 mb-2 truncate">{product.title}</h3>
               <p className="text-sm text-gray-600 mb-4 truncate">{product.description}</p>
