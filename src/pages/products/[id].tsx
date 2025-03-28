@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import useStore from '@/store'; 
 import { Product } from '@/store';
 import { useEffect, useState } from 'react';
+import CreateProductPage from './create-product';
 
 const ProductPage = () => {
   const router = useRouter();
