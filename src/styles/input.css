@@ -46,8 +46,6 @@ button.cross {
     max-width: 100%;
     height: auto;
   } 
-
-
 .relative {
   position: relative;
 }
@@ -70,7 +68,6 @@ button.cross {
 }
 
 .p-4 {
-  /* padding: 1rem; */
   padding: 16px; 
 }
 
