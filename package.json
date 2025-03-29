@@ -2,6 +2,7 @@
   "name": "spa-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aleksandrashilets.github.io/spa-test",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
